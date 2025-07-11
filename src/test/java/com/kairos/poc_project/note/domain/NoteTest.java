@@ -27,7 +27,7 @@ class NoteTest {
 
     @Test
     void loadNoteFromJson() throws Exception {
-        Note note = JsonTestUtils.readJsonFromResource("/note.json", Note.class);
+        Note note = JsonTestUtils.readJsonFromResource("/json/note.json", Note.class);
 
         assertNotNull(note);
         assertEquals("Sample Note", note.getTitle());
