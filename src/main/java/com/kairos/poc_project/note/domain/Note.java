@@ -1,5 +1,7 @@
 package com.kairos.poc_project.note.domain;
 
+import com.kairos.poc_project.note.common.MarkdownFormatted;
+
 import java.time.Instant;
 import java.util.Objects;
 import java.util.Set;
@@ -8,6 +10,7 @@ import java.util.UUID;
 public class Note {
     private UUID id;
     private String title;
+    @MarkdownFormatted
     private String content;
     private Set<String> tags;
     private Instant createdAt;
@@ -15,6 +18,10 @@ public class Note {
 
     public Note() {
         super();
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public Note(UUID id, String title, String content, Set<String> tags, Instant createdAt, Instant updatedAt) {
