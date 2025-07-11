@@ -22,10 +22,14 @@ public class Note {
         this.updatedAt = updatedAt;
     }
 
-    public static Note createNew(String title, String content, Set<String> tags) {
-        Instant now = Instant.now();
-        return new Note(UUID.randomUUID(), title, content, tags, now, now);
-    }
+   public Note(String title, String content, Set<String> tags) {
+        this.id = UUID.randomUUID();
+        this.title = title;
+        this.content = content;
+        this.tags = tags;
+        this.createdAt = Instant.now();
+        this.updatedAt = Instant.now();
+   }
 
     public void updateContent(String newTitle, String newContent, Set<String> newTags) {
         this.title = newTitle;
