@@ -1,0 +1,26 @@
+[
+  {
+    "id": "d290f1ee-6c54-4b01-90e6-d701748f0851",
+    "title": "First Note",
+    "content": "This is the content of the first note.",
+    "tags": ["general", "personal"],
+    "createdAt": "2025-07-11T10:00:00Z",
+    "updatedAt": "2025-07-11T12:00:00Z"
+  },
+  {
+    "id": "c7b3a42e-9c29-4c19-a97d-bef9d5eb4bfa",
+    "title": "Second Note",
+    "content": "Content for the second note goes here.",
+    "tags": ["work"],
+    "createdAt": "2025-07-10T08:30:00Z",
+    "updatedAt": "2025-07-10T09:45:00Z"
+  },
+  {
+    "id": "a3dcb4d2-1c87-4c74-8f4a-26bb5f560a44",
+    "title": "Third Note",
+    "content": "Notes about project planning.",
+    "tags": ["project", "planning"],
+    "createdAt": "2025-07-09T15:20:00Z",
+    "updatedAt": "2025-07-11T07:10:00Z"
+  }
+]
